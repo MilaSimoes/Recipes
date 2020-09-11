@@ -1,0 +1,62 @@
+body {
+	height: 100vh;
+	font-family: 'Handlee', cursive;
+	background: #f1bd71 url('../assets/background.jpg') center no-repeat;
+	background-size: cover;
+}
+
+.container {
+	width: 80%;
+	height: 100vh;
+	padding: 10px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;	
+}
+
+.container .texts {
+	width: 100%;
+}
+
+.container .texts h1 {
+	color: #fff;
+	font-size: 5em;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.container a {
+	display: inline-block;
+	padding: 15px 50px;
+	margin-top: 40px;
+	font-size: 2em;
+	color: #fff;
+	background: #000;
+	text-decoration: none;
+	border-radius: 3px;
+	transition: background .2s;
+}
+
+.container a:hover {
+	background: #f1bd71;
+	color: #000;
+}
+
+@media (max-width:600px) {
+	.container {
+		width:100%;
+		padding: 20px;
+	}
+
+	.container .texts {
+		text-align: center;
+	}
+	
+	.container .texts h1 {
+		font-size: 4em;
+	}
+
+	.container a {
+		font-size: 1.5em;
+		padding: 15px 30px;
+	}
+}
